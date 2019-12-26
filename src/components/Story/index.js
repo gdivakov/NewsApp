@@ -11,7 +11,7 @@ class Story extends React.Component {
     const url = this.props.navigation.getParam('url', null);
 
     return (
-      <View>
+      <View style={{flex: 1}}>
         <WebView source={{uri: url}} />
       </View>
     );
